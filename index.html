@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dice Roller API Test</title>
+</head>
+<body>
+  <h1>Dice Roller API Test</h1>
+  <button onclick="rollDice()">Roll Dice</button>
+
+
+
+  <script>
+ 
+
+    async function rollDice() {
+      const response = await fetch('file:///C:/Google%20Drive/College/Spring%202024/Software%20Engineering/Sprint-3/dice-roller-with-nodejs-sdk/index.html/roll', { method: 'GET' });
+      const data = await response.json();
+      console.log('Dice Roll Result:', data);
+      
+    }
+  </script>
+
+Dice1: <input id="dice1" type="text" value="" size="5" disabled><br>
+Dice2: <input id="dice2" type="text" value="" size="5" disabled><br>
+Dice3: <input id="dice3" type="text" value="" size="5" disabled><br>
+Dice4: <input id="dice4" type="text" value="" size="5" disabled><br>
+Dice5: <input id="dice5" type="text" value="" size="5" disabled>
+
+</body>
+</html>
